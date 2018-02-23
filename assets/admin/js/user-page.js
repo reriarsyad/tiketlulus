@@ -6,7 +6,8 @@ $(function () {
 		var id = button.data('id'); // Extract info from data-* attributes
 		var username = button.data('username');
 		var password = button.data('password');
-		var fullname = button.data('fullname');
+		var firstname = button.data('firstname');
+		var lastname = button.data('lastname');
 		var address = button.data('address');
 		var phone = button.data('phone');
 		var gender = button.data('gender');
@@ -16,7 +17,8 @@ $(function () {
 		//   modal.find('#id-text').val(id);
 		modal.find('#username').val(username);
 		modal.find('#password').val(password);
-		modal.find('#fullname').val(fullname);
+		modal.find('#firstname').val(firstname);
+		modal.find('#lastname').val(lastname);
 		modal.find('#address').val(address);
 		modal.find('#phone').val(phone);
 
@@ -31,7 +33,7 @@ $(function () {
 		}
 		//modal.find('#id-text').val(gender);
 
-		var actionValue = 'http://localhost/flight-travel/crud/edit/'+id;
+		var actionValue = 'http://localhost/latihan-tiket/crud/edit/'+id;
 		$('#editForm').attr('action', actionValue);
 	});
 

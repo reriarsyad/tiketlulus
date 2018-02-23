@@ -244,10 +244,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <li class="header">MENU</li>
         <!-- Optionally, you can add icons to the links -->
         <li>
-            <a id="home" href="<?php echo base_url() ?>admin/dashboard"><i class="fa fa-home"></i> <span>Home</span></a>
+            <a id="home" href="<?php echo base_url() ?>index.php"><i class="fa fa-home"></i> <span>Home</span></a>
         </li>
         <li>
             <a id="routes"href="#"><i class="fa fa-link"></i> <span>Routes</span></a>
+        </li>
+        <li>
+            <a id="user" href="<?php echo base_url() ?>admin/tambah"><i class="fa fa-link"></i> <span>Tambah User</span></a>
         </li>
         <li>
             <a id="user" href="<?php echo base_url() ?>admin/user"><i class="fa fa-link"></i> <span>User</span></a>

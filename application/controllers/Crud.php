@@ -11,24 +11,38 @@ class Crud extends CI_Controller {
     
     public function register()
     {
-        $last_id = $this->db->get(user)->num_rows();
-
-        $id = $last_id + 1;
 
         $data = array(
-            'id'=> $id,
             'username' => $this->input->post('username'),
             'password' => $this->input->post('password'),
-            'fullname' => $this->input->post('fullname'),
+            'firstname' => $this->input->post('firstname'),
+            'lastname' => $this->input->post('lastname'),
             'address' => $this->input->post('address'),
             'phone' => $this->input->post('phone'),
-            'gender' => $this->input->post('gender')
+            'gender' => $this->input->post('gender'),
+            'level' => intval($this->input->post('level'))
             // 'level' => $level 
             );
         $data = $this->Core_Model->register('user', $data);
         redirect(base_url("admin/user"),'refresh');
     }
 
+    public function daftar()
+    {
+
+        $data = array(
+            'username' => $this->input->post('username'),
+            'password' => $this->input->post('password'),
+            'firstname' => $this->input->post('firstname'),
+            'lastname' => $this->input->post('lastname'),
+            'address' => $this->input->post('address'),
+            'phone' => $this->input->post('phone'),
+            'gender' => $this->input->post('gender'),
+            // 'level' => $level 
+            );
+        $data = $this->Core_Model->register('user', $data);
+        redirect(base_url(),'refresh');
+    }
 	public function success()
 	{			
 		$this->load->view('template/style');
@@ -42,10 +56,12 @@ class Crud extends CI_Controller {
        $data = array(
             'username' => $this->input->post('username'),
             'password' => $this->input->post('password'),
-            'fullname' => $this->input->post('fullname'),
+            'firstname' => $this->input->post('firstname'),
+            'lastname' => $this->input->post('lastname'),
             'address' => $this->input->post('address'),
             'phone' => $this->input->post('phone'),
-            'gender' => $this->input->post('gender')
+            'gender' => $this->input->post('gender'),
+            'level' => intval($this->input->post('level'))
             // 'level' => $level 
             );
 

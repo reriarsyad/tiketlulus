@@ -42,29 +42,29 @@
 
 		
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.css">
 	<!-- Superfish -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/superfish.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/superfish.css">
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/magnific-popup.css">
 	<!-- Date Picker -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap-datepicker.min.css">
 	<!-- CS Select -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/cs-select.css">
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/cs-skin-border.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/cs-select.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/cs-skin-border.css">
 	
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
 
 
 	<!-- Modernizr JS -->
-	<script src="<?php echo base_url() ?>_assets/js/modernizr-2.6.2.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="<?php echo base_url() ?>_assets/js/respond.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/respond.min.js"></script>
 	<![endif]-->
 
 	</head>
@@ -83,7 +83,7 @@
 							<li><a href="<?php echo base_url() ?>">Home</a></li>
 							<li class="active"><a href="<?php echo base_url() ?>index.php/about">About</a></li>
 							<li><a href="<?php echo base_url() ?>index.php/daftar">Daftar</a></li>
-							<li><a href="<?php echo base_url() ?>index.php/login">Log IN</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/admin">Log IN</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -102,211 +102,7 @@
 								<div class="tabulation animate-box">
 
 								  <!-- Nav tabs -->
-								   <ul class="nav nav-tabs" role="tablist">
-								      <li role="presentation">
-								      	<a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">Flights</a>
-								      </li>
-								   </ul>
-
-								   <!-- Tab panes -->
-									<div class="tab-content">
-									 <div role="tabpanel" class="tab-pane" id="flights">
-										<div class="row">
-											<div class="col-xxs-12 col-xs-6 mt">
-												<div class="input-field">
-													<label for="from">From:</label>
-													<input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
-												</div>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<div class="input-field">
-													<label for="from">To:</label>
-													<input type="text" class="form-control" id="to-place" placeholder="Tokyo, Japan"/>
-												</div>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt alternate">
-												<div class="input-field">
-													<label for="date-start">Check In:</label>
-													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
-												</div>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt alternate">
-												<div class="input-field">
-													<label for="date-end">Check Out:</label>
-													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
-												</div>
-											</div>
-											<div class="col-sm-12 mt">
-												<section>
-													<label for="class">Class:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>Economy</option>
-														<option value="economy">Economy</option>
-														<option value="first">First</option>
-														<option value="business">Business</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<section>
-													<label for="class">Adult:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<section>
-													<label for="class">Children:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xs-12">
-												<input type="submit" class="btn btn-primary btn-block" value="Search Flight">
-											</div>
-										</div>
-									 </div>
-
-									 <div role="tabpanel" class="tab-pane active" id="hotels">
-									 	<div class="row">
-											<div class="col-xxs-12 col-xs-12 mt">
-												<div class="input-field">
-													<label for="from">City:</label>
-													<input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
-												</div>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt alternate">
-												<div class="input-field">
-													<label for="date-start">Return:</label>
-													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
-												</div>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt alternate">
-												<div class="input-field">
-													<label for="date-end">Check Out:</label>
-													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
-												</div>
-											</div>
-											<div class="col-sm-12 mt">
-												<section>
-													<label for="class">Rooms:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="economy">1</option>
-														<option value="first">2</option>
-														<option value="business">3</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<section>
-													<label for="class">Adult:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<section>
-													<label for="class">Children:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xs-12">
-												<input type="submit" class="btn btn-primary btn-block" value="Search Flight">
-											</div>
-										</div>
-									 </div>
-
-									 <div role="tabpanel" class="tab-pane" id="packages">
-									 	<div class="row">
-											<div class="col-xxs-12 col-xs-6 mt">
-												<div class="input-field">
-													<label for="from">City:</label>
-													<input type="text" class="form-control" id="from-place" placeholder="Los Angeles, USA"/>
-												</div>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<div class="input-field">
-													<label for="from">Destination:</label>
-													<input type="text" class="form-control" id="to-place" placeholder="Tokyo, Japan"/>
-												</div>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt alternate">
-												<div class="input-field">
-													<label for="date-start">Departs:</label>
-													<input type="text" class="form-control" id="date-start" placeholder="mm/dd/yyyy"/>
-												</div>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt alternate">
-												<div class="input-field">
-													<label for="date-end">Return:</label>
-													<input type="text" class="form-control" id="date-end" placeholder="mm/dd/yyyy"/>
-												</div>
-											</div>
-											<div class="col-sm-12 mt">
-												<section>
-													<label for="class">Rooms:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="economy">1</option>
-														<option value="first">2</option>
-														<option value="business">3</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<section>
-													<label for="class">Adult:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xxs-12 col-xs-6 mt">
-												<section>
-													<label for="class">Children:</label>
-													<select class="cs-select cs-skin-border">
-														<option value="" disabled selected>1</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-													</select>
-												</section>
-											</div>
-											<div class="col-xs-12">
-												<input type="submit" class="btn btn-primary btn-block" value="Search Packages">
-											</div>
-										</div>
-									 </div>
 									</div>
-
-								</div>
 							</div>
 							<div class="desc2 animate-box">
 								<div class="col-sm-7 col-sm-push-1 col-md-7 col-md-push-1">
@@ -329,7 +125,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 						<h3>Contact Information</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<p>Jika ada keluhan yang akan disampaikan,atau akan bertanya mengenai Penerbangan silahkan hubungi kontak dibawah ini</p>
 					</div>
 				</div>
 				<form action="#">
@@ -338,9 +134,9 @@
 							<h3 class="section-title">Our Address</h3>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 							<ul class="contact-info">
-								<li><i class="icon-location-pin"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
-								<li><i class="icon-phone2"></i>+ 1235 2355 98</li>
-								<li><i class="icon-mail"></i><a href="#">info@yoursite.com</a></li>
+								<li><i class="icon-location-pin"></i>JL.Raya Sokanegara</li>
+								<li><i class="icon-phone2"></i>+6285865587512</li>
+								<li><i class="icon-mail"></i><a href="#">rerriarsyad@gmail.com</a></li>
 								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
 							</ul>
 						</div>
@@ -425,24 +221,16 @@
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 						</div>
 						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-							<h3>Top Flights Routes</h3>
+							<h3>Tujuan Terbaik</h3>
 							<ul>
-								<li><a href="#">Manila flights</a></li>
-								<li><a href="#">Dubai flights</a></li>
-								<li><a href="#">Bangkok flights</a></li>
-								<li><a href="#">Tokyo Flight</a></li>
-								<li><a href="#">New York Flights</a></li>
+								<li><a href="#">Jakarta</a></li>
+								<li><a href="#">Surabaya</a></li>
+								<li><a href="#">Lombok</a></li>
+								<li><a href="#">Jogjakarta</a></li>
+								<li><a href="#">Bali</a></li>
 							</ul>
 						</div>
-							<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
-							<h3>Affordable</h3>
-							<ul>
-								<li><a href="#">Food &amp; Drink</a></li>
-								<li><a href="#">Fare Flights</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
+						<div class="row">
 						<div class="col-md-6 col-md-offset-3 text-center">
 							<p class="fh5co-social-icons">
 								<a href="#"><i class="icon-twitter2"></i></a>
@@ -469,34 +257,34 @@
 	<!-- jQuery -->
 
 
-	<script src="<?php echo base_url() ?>_assets/js/jquery.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="<?php echo base_url() ?>_assets/js/jquery.easing.1.3.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="<?php echo base_url() ?>_assets/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="<?php echo base_url() ?>_assets/js/jquery.waypoints.min.js"></script>
-	<script src="<?php echo base_url() ?>_assets/js/sticky.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.waypoints.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/sticky.js"></script>
 
 	<!-- Stellar -->
-	<script src="<?php echo base_url() ?>_assets/js/jquery.stellar.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.stellar.min.js"></script>
 	<!-- Superfish -->
-	<script src="<?php echo base_url() ?>_assets/js/hoverIntent.js"></script>
-	<script src="<?php echo base_url() ?>_assets/js/superfish.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/hoverIntent.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/superfish.js"></script>
 	<!-- Magnific Popup -->
-	<script src="<?php echo base_url() ?>_assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="<?php echo base_url() ?>_assets/js/magnific-popup-options.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/magnific-popup-options.js"></script>
 	<!-- Date Picker -->
-	<script src="<?php echo base_url() ?>_assets/js/bootstrap-datepicker.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/bootstrap-datepicker.min.js"></script>
 	<!-- CS Select -->
-	<script src="<?php echo base_url() ?>_assets/js/classie.js"></script>
-	<script src="<?php echo base_url() ?>_assets/js/selectFx.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/classie.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/selectFx.js"></script>
 	<!-- Google Map -->
 	
-	<script src="<?php echo base_url() ?>_assets/js/google_map.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/google_map.js"></script>
 	
 	<!-- Main JS -->
-	<script src="<?php echo base_url() ?>_assets/js/main.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 
 	</body>
 </html>

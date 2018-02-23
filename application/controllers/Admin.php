@@ -58,7 +58,7 @@ class Admin extends CI_Controller {
 		$data['js_to_load']= array('');
 		$this->load->view('admin/template/v_admin_header');
 		$this->load->view('admin/v_dashboard');
-		$this->load->view('admin/template/v_admin_footer');
+		$this->load->view('admin/template/v_admin_footer', $data);
 		
 		if($this->session->userdata('status') != "online"){
 			redirect(base_url("page404"), 'refresh');
@@ -70,6 +70,18 @@ class Admin extends CI_Controller {
 		$data['js_to_load']= array('user-page.js');
 		$this->load->view('admin/template/v_admin_header');
 		$this->load->view('admin/pages/v_user');
+		$this->load->view('admin/template/v_admin_footer', $data);
+
+		if($this->session->userdata('status') != "online"){
+			redirect(base_url("page404"), 'refresh');
+		}
+	}
+
+	public function tambah()
+	{
+		$data['js_to_load']= array('user-page.js');
+		$this->load->view('admin/template/v_admin_header');
+		$this->load->view('admin/pages/v_tambah');
 		$this->load->view('admin/template/v_admin_footer', $data);
 
 		if($this->session->userdata('status') != "online"){

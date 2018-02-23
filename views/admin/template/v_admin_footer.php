@@ -104,12 +104,5 @@
 <script src="<?php echo base_url() ?>assets/vendor/pace/pace.min.js"></script>
 <script src="<?php echo base_url() ?>assets/admin/js/demo.js"></script>
 <script src="<?php echo base_url() ?>assets/vendor/iCheck/icheck.min.js"></script>
-
-<?php 
-  if (is_array($js_to_load)) {
-	foreach ($js_to_load as $js_file) {?>
-<script type="text/javascript" src="<?php echo base_url() ?>assets/admin/js/<?php echo $js_file;?>"></script>
-<?php  }
-  } ?>
 </body>
 </html>

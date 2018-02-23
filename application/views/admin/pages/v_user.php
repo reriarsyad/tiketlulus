@@ -17,59 +17,6 @@
 		<!-- Main content -->
 		<section class="content container-fluid">
 
-		<div class="box box-info">
-						<div class="box-header with-border">
-							<h3 class="box-title">Create User/Admin</h3>
-						</div>
-						<div class="box-body">
-							<form action="<?php echo base_url() ?>crud/register" method="post">
-								<div class="input-group form-group has-feedback">
-									<span class="input-group-addon"><i class="fa fa-user"></i></span>
-									<input class="form-control" name="username" placeholder="Username" type="text">
-								</div>
-								<div class="input-group form-group has-feedback">
-									<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-									<input class="form-control" name="password" placeholder="Password" type="password">
-								</div>
-								<div class="input-group form-group has-feedback">
-									<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-									<input class="form-control" name="fullname" placeholder="Fullname" type="text">
-								</div>
-								<div class="form-group has-feedback">
-									<label>Textarea</label>
-									<textarea name="address" class="form-control" rows="3" placeholder="Address"></textarea>
-								</div>
-								<div class="input-group form-group has-feedback">
-									<span class="input-group-addon"><i class="fa fa-phone"></i></span>
-									<input class="form-control" name="phone" placeholder="phone" type="text">
-								</div>
-								<div class="form-group">
-									<div class="radio">
-										<label>
-											<input type="radio" name="gender" value="l">
-											Laki Laki
-										</label>
-									</div>
-									<div class="radio">
-										<label>
-											<input type="radio" name="gender" value="p">
-											Perempuan
-										</label>
-									</div>
-								</div>
-								<div class="form-group">
-									<label>Level</label>
-									<select name="level" class="form-control">
-										<option value="1">1 : Admin</option>
-										<option value="2">2 : User</option>
-									</select>
-								</div>
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</form>
-						</div>
-						<!-- /.box-body -->
-					</div>
-
 		<div class="box">
 				<div class="box-header">
 					<h3 class="box-title">User Database</h3>
@@ -124,12 +71,20 @@
 											<td><?php echo $nomor++?></td>
 											<td><?php echo $row->username;?></td>
 											<td><?php echo $row->password;?></td>
-											<td><?php echo $row->fullname;?></td>
+											<td><?php echo $row->firstname.' '.$row->lastname;?></td>
 											<td><?php echo $row->address;?></td>
 											<td><?php echo $row->phone;?></td>
 											<td><?php echo $row->gender;?></td>
 											<td>
-												<a class="btn btn-warning btn-s" data-toggle="modal" data-target="#editModal" data-id="<?php echo $row->id;?>" data-username="<?php echo $row->username;?>" data-password="<?php echo $row->password;?>" data-fullname="<?php echo $row->fullname;?>" data-address="<?php echo $row->address;?>" data-phone="<?php echo $row->phone;?>" data-gender="<?php echo $row->gender;?>">
+												<a class="btn btn-warning btn-s" data-toggle="modal" data-target="#editModal" 
+													data-id="<?php echo $row->id;?>" 
+													data-username="<?php echo $row->username;?>" 
+													data-password="<?php echo $row->password;?>" 
+													data-fistname="<?php echo $row->firstname;?>"
+													data-lastname="<?php echo $row->lastname;?>" 
+													data-address="<?php echo $row->address;?>" 
+													data-phone="<?php echo $row->phone;?>" 
+													data-gender="<?php echo $row->gender;?>">
 													<span class="fa fa-pencil"/>
 													edit
 												</a>
@@ -193,7 +148,11 @@
 						</div>
 						<div class="input-group form-group has-feedback">
 							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-							<input id="fullname"class="form-control" name="fullname" placeholder="Fullname" type="text">
+							<input id="firstname"class="form-control" name="firstname" placeholder="Firstname" type="text">
+						</div>
+						<div class="input-group form-group has-feedback">
+							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+							<input id="lastname"class="form-control" name="lastname" placeholder="lastname" type="text">
 						</div>
 						<div class="form-group has-feedback">
 							<label>Textarea</label>

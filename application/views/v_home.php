@@ -43,26 +43,26 @@
 	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.css">
 	<!-- Superfish -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/superfish.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/superfish.css">
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/magnific-popup.css">
 	<!-- Date Picker -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap-datepicker.min.css">
 	<!-- CS Select -->
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/cs-select.css">
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/cs-skin-border.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/cs-select.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/cs-skin-border.css">
 	
-	<link rel="stylesheet" href="<?php echo base_url() ?>_assets/css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
 
 
 	<!-- Modernizr JS -->
-	<script src="<?php echo base_url() ?>_assets/js/modernizr-2.6.2.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -84,7 +84,7 @@
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="<?php echo base_url() ?>index.php/about">About</a></li>
 							<li><a href="<?php echo base_url() ?>index.php/daftar">Daftar</a></li>
-							<li><a href="<?php echo base_url() ?>index.php/login">Log IN</a></li>
+							<li><a href="<?php echo base_url() ?>index.php/admin">Log IN</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -95,7 +95,7 @@
 	
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(<?php echo base_url() ?>_assets/images/cover_bg_1.jpg);">
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(<?php echo base_url() ?>assets/images/cover_bg_1.jpg);">
 				<div class="desc">
 					<div class="container">
 						<div class="row">
@@ -115,14 +115,34 @@
 										<div class="row">
 											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
-													<label for="from">From:</label>
-													<input type="text" class="form-control" id="from-place" placeholder="Jakarta"/>
+													<label for="class">From:</label>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected> </option>
+														<option value="">Bandara Soekarno Hatta (JKT)</option>
+														<option value="">Bandara Adi Sucipto (YK)</option>
+														<option value="">Bandara Ahmad Yani (SMG)</option>
+														<option value="">Bandara Juanda (SRB)</option>
+														<option value="">Bandara Ngurah Rai (Bali)</option>
+														<option value="">Bandara Internasional Lombok (LMBK)</option>
+														<option value=""></option>
+														<option value=""></option>
+													</select>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt">
 												<div class="input-field">
 													<label for="from">To:</label>
-													<input type="text" class="form-control" id="to-place" placeholder="Jogjakarta"/>
+													<select class="cs-select cs-skin-border">
+														<option value="" disabled selected> </option>
+														<option value="">Bandara Soekarno Hatta (JKT)</option>
+														<option value="">Bandara Adi Sucipto (YK)</option>
+														<option value="">Bandara Ahmad Yani (SMG)</option>
+														<option value="">Bandara Juanda (SRB)</option>
+														<option value="">Bandara Ngurah Rai (Bali)</option>
+														<option value="">Bandara Internasional Lombok (LMBK)</option>
+														<option value=""></option>
+														<option value=""></option>
+													</select>
 												</div>
 											</div>
 											<div class="col-xxs-12 col-xs-6 mt alternate">
@@ -274,7 +294,7 @@
 						<div class="col-md-2 col-sm-2 col-xs-12 fh5co-footer-link">
 							<h3>Tujuan Terbaik</h3>
 							<ul>
-								<li><a href="#">Raja Ampart</a></li>
+								<li><a href="#">Jakarta</a></li>
 								<li><a href="#">Surabaya</a></li>
 								<li><a href="#">Lombok</a></li>
 								<li><a href="#">Jogjakarta</a></li>
@@ -308,31 +328,31 @@
 	<!-- jQuery -->
 
 
-	<script src="<?php echo base_url() ?>_assets/js/jquery.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="<?php echo base_url() ?>_assets/js/jquery.easing.1.3.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="<?php echo base_url() ?>_assets/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="<?php echo base_url() ?>_assets/js/jquery.waypoints.min.js"></script>
-	<script src="<?php echo base_url() ?>_assets/js/sticky.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.waypoints.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/sticky.js"></script>
 
 	<!-- Stellar -->
-	<script src="<?php echo base_url() ?>_assets/js/jquery.stellar.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.stellar.min.js"></script>
 	<!-- Superfish -->
-	<script src="<?php echo base_url() ?>_assets/js/hoverIntent.js"></script>
-	<script src="<?php echo base_url() ?>_assets/js/superfish.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/hoverIntent.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/superfish.js"></script>
 	<!-- Magnific Popup -->
-	<script src="<?php echo base_url() ?>_assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="<?php echo base_url() ?>_assets/js/magnific-popup-options.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/magnific-popup-options.js"></script>
 	<!-- Date Picker -->
-	<script src="<?php echo base_url() ?>_assets/js/bootstrap-datepicker.min.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/bootstrap-datepicker.min.js"></script>
 	<!-- CS Select -->
-	<script src="<?php echo base_url() ?>_assets/js/classie.js"></script>
-	<script src="<?php echo base_url() ?>_assets/js/selectFx.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/classie.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/selectFx.js"></script>
 	
 	<!-- Main JS -->
-	<script src="<?php echo base_url() ?>_assets/js/main.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
 
 	</body>
 </html>
